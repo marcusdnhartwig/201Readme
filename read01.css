@@ -1,0 +1,10 @@
+img {width: 175px; height: 300px;
+
+}
+pullquote {text-decoration: line-through}
+
+article {border: seagreen solid;padding: 10px;}
+
+aside {border: tomato dashed;padding-top: 10px;columns: 2;}
+
+article {columns: 2;}

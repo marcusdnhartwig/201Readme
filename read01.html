@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <link href="read01.css" rel="stylesheet" />
+        <title>read01</title>
+        <meta name="discription"
+            content="description of the page sometimes search engines use this space as a filler for what they display in the search bar"/>
+        <meta name="kewords"
+            content="this contains a list of comma separated words that a user might search on to find the page... In practice... Not so much anymore"/>
+        <meta name="robots"
+            content="this indicates whether search engines should add this page to their search results or not. a value of noinde can be used if this page should not be added. a value of nofollow can be 
+            used if search engens shoujld add this page in their resuls but not any pages that it links to."/>
+        <meta name="author"
+            content="thgis defines the author of the web page"/>
+        <meta name="pragma"
+            content="this prevents the browser from caching the page."/>
+        <meta name='expires'
+            content="because browsers often cache the content of the page, the expires option can be used to 
+            indicate when the page shoud expire and no longer be cached. **IT MUST LOOK LIKE THIS FORMAT*** Mon. 04 Apr 2014 23:59:59 GMT"/>
+</head>
+
+    <header>
+        <h1>Read:01 Intro HTML and JavaScript</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <article>
+        <figure>
+            <img src='/babyMeiLi.jpg'> 
+            <figcaption>Baby Mei Li</figcaption>
+        </figure>
+        <hgroup>
+            <h2>Content</h2>
+            <h3>All of these NOTES are sourced from Jon Duckett's books "JavaScript & Jquery" and "HTML & CSS"</h3>
+        </hgroup>
+            <p>hgroup elements is used to gorup together a set of one or more h1,h2,h3... element so that they are treated as one single heading.</p>
+        <p>If a page contains several articles then each individual article would live inside its own element.
+            The article elements can even be nested inside each other., 
+        </p>
+    </article>
+    <aside>
+        <section class="my life">
+            <h2>my life</h2>
+            <a href="index.html">HOME</a>
+            <p>When the aside element is used inside an article elementit should contai info that is related
+                to the article but not essential to is=ts meaning. When tha aside element is used outside of an article element 
+                it acts as a container for the content that is related to the entire page. 
+            </p>
+        </section>
+        <p> section element groups relate content together and typically each section would have its own heading.</p>
+        <p>the section element should not be used as a wrapper for the entire page unless the page on ly contains one distinct piece of content. if you 
+            want a containing element for the entire page that jobe is best left to the div element.
+        </p>
+    </aside>
+
+    <body>
+        <h2>HTML Intro</h2>
+            <p> All websites use HTML and CSS, but content management systmes, 
+                blogging software, and e-commerce platforms often add a few more technologies into the mix. 
+            </p>
+            <p>
+
+            </p>
+        <h2>HTML Ch.1 "Structure"</h2>
+            <p>In every document, structure is very important in helping the readers understand the messages that is being conveyed
+                and to navigate around the document. in order to learn how to write web pages, it is important to understand how to streucture the documents. 
+            </p>
+            <p>HTML describes the structure of pages. HTML is made up of elements. Elements are madu up of two tags: an opening tag and a closing tag.
+                Each element tell the browser something about the info that sits between the tags. Tags act like containers. 
+            </p>
+            <p>There are also Attributes. Attributes tell us more about elements. Attributes provide additional info abojut the contents of an element. These appear on the oppening tag 
+                an ellemtn and are made up of two parts: a name and a Value, separated by an equals sign. Most Attribute values are either pre-defined 
+                or follow a stipulated format.
+            </p>
+            <p>Before the "body" element you will often see a "head" element. This cotains information about the page rather than info that is shown within the browser. There
+                is also the "title" element. This element is shown at the top of the browser, usually along a tab. 
+            </p>
+            <p>An easy way to get started with understanding how a webpage is built is to open up the source code on your browser. 
+            </p>
+        <h2>HTML Ch.8 "Extra Markup"</h2>
+            <p>Doing this=bracket!--text--bracket will keep the text hidden w/in the browser and con only be seen in HTML. It's a good idea to add comments 
+                to your code because no matter how familiar you are with the page at the time of writing it, when you come back to it later (or someone else does) comments will 
+                make it easier to understand... You can still see these comments w/in the "Source code."
+            </p>
+            <p><!--like this--> I did it here, but you can't see it unless you open up the html. You can also use this trick to keep code from populating a page. 
+                Possible works in progress and the like.
+            </p>
+            <p> Every HTML ELEMENT can carry an ID ATTRIBUTE. It is used to uniquely ID that element from other elements on the page. Its value
+                should start with a letter or an underscore NOT A NUMBER OR ANY OTHER CHARACTER. 
+            </p>
+            <p id="pullquote">ID ELEMENTS can also be used to allow JavaScript & CSS to work interactivly with that particular element.          
+            </p>
+            <p>Every HTML element can also carry a class Attribute. Sometimes, rather than uniquely iding one element within a doc you will want a way to ID
+                several elements as being different from the other elements on the page.
+            </p>
+            <p>Block elements- some elements will always appear to start on a new line in the browser window.
+                These are known as 'block level' elements. some examples are  h1,p,ul,li > 
+            </p>
+            <p>Then there are elements that will always appear to continue on the same line ans neighbouring elements and These
+                are knows as 'inline' elements. OR a,b,em, img >
+            </p>
+            <p>Grouping Text & Elements in a Block. The vdiv> element allows you to group a set of elements together in one block level box. a vdiv> element can contain
+                all of the element for a header of the site. *NOTE* since there may be several other elemtns inside a vdiv> element it can be 
+                helpful to add a comment after the closing bracket. 
+            </p>
+            <p>Grouping text & elements inline.-- the span> elementacts like an inline equivalent of the div> and it can be used to 
+                contain a section of text where there isn't another element to differentiate it from its surrounding text. and it can containa number of inline elements. 
+            </p>
+            <p>IFRAMES> is like a little window that has been cut into the page. They are often used to embed a Google Map into a page. 
+                the content of the iframe can be any html page. YOU WILL NEED TO KNOW src>, height, & width IN ORDER TO PROPERLY USE iframe>
+            </p>
+            <p>META> element lives within the head element and contains info about that web page. Along with everything else in the head element it can not be seen on the browser. 
+                The Meta element is an empty element so it does not have a closing tag. it uses attributes to carry the info. The most common attributes 
+                are the name and content attributes, which tend to be used together. ***I will put a sample at the top of this page.***
+            </p>
+            <p>Escape Characters= there are some characters that are used in and reserved by HTML code. LIKE the left and right angled brackets.
+                In order to "escape" the inablility to populate these markings on your page... Like I could have used above try &lt. .. since you couldn't see that it's & lt. 
+                There are many other esacpe characters that you can find on page 194. 
+            </p>
+        <h2>HTML Ch.17 "HTML Layout"</h2>
+            <p>***MOST OF THIS CONTENT CAN BE SEEN IN HTML FORMAT UP NEAR THE TOP***   
+            </p>
+            <P>Figure and figcaption are what is used to nest and caption an image.
+            </P>
+            <p>Sectioning elements como div; Where there are no more suitable elements to group a set of elements. the div element will still be used. It can even 
+                be used as a wrapper for an entire page.
+            </p>
+            <p>Linking block level elements.--- the &lta> element can be used to turn an entire block into a link.                 
+            </p>
+        <h2>HTML Ch.18 "Process & Design"</h2>
+            <p>Every site should be designed for the target audience... Not just for yourself. When building a website it's vital to ask yourself
+                clarifying questions.
+            </p>
+            <p>What are visitors trying to achieve when they visit your site? What are they motivated by?</p>
+            <p>What info do your visitors need at your site? What are they looking for? What could help them find it?</p>
+            <p>Ho often will folks visit the site? Are you info based? Then you should be updating all the time.</p>
+            <p>Check out site maps on pg.461*** You can use this as a tool to wireframe your site.</p>
+            <p>Most users do not read entire pages. Rather they skim to find info. You can use contrast to create a visual hierachey that gets across your key message and helps
+                your users find what they are looking for. You can use SIZE, COLOR, & STYLE.
+            </p>
+            <p>You can also use grouping and similarity to help simplify the info that you present.</p>
+        <h2>JS Intro</h2>
+            <p>JS allows you to make web pages more interactive by accessing and modifying the content and markup used in a qeb page while it is being viewed in the browser.
+            </p>
+            <p>JS encompasses many of the traditional rules of programming. It can make the web page fel interactive by respondgin to what the user does.
+            </p>
+            <p>being able to change the content of an HTML page while it is loaded in the browser is powerful. You can ACCESS the content of the page. MODIFY the content of the page. PROGRAM 
+                rules or instructions the browser can follow. REACT to events triggered by the user or browser.
+            </p>
+            <p>A WHAT IS A SCRIPT AND HOW DO I CREATE ONE?
+            </p>
+            <P>A script is a series of instructions that a computer can follow to achieve a goal. Basiclly a recipe.
+            </P>
+            <P>To write a script you need to state your goal and then list the tasks that need to be completed in order to achieve it. STEP BY STEP. Computers are dumb.
+            </P>
+            <P>Vocabulary are the words that the computer understands. Syntax is how you put those words together to creat instructions computers can follow. </P>
+            <P>
+            </P>
+            <P>
+            </P>
+            <P>
+            </P>
+        <h2>JS Ch.1 "The ABC of Programming"</h2>
+        <p> A- WHAT IS A SCRIPT AND HOW DO I CREATE ONE?
+        </p>
+        <P>A script is a series of instructions that a computer can follow to achieve a goal. Basiclly a recipe.
+        </P>
+        <P>To write a script you need to state your goal and then list the tasks that need to be completed in order to achieve it. STEP BY STEP. Computers are dumb.
+        </P>
+        <P>Vocabulary are the words that the computer understands. Syntax is how you put those words together to creat instructions computers can follow. </P>
+        <P>You need to learn to "think" like a computer because they solve tasks in different ways than you would approach them. Computers solve
+            problems PROGRAMMATICALLY... They follow series of instructions one after another to complete a proplem. IF the instructions are unclear to the computor
+            or the commands are not written mas o manos perfectly the computer will yell at you/break.
+        </P>
+        <p>B- HOW DO COMPUTERS FIT IN WITH THE WORLD AROUND THEM?
+        </p>
+        <P> Computers create models of the world using data. Things are represented as "OBJECTS". How many OBJECTS of the same thing there are = INSTANCES. 
+        </P>
+        <p> Characteristics of things are represented by "PROPERTIES" of and OBJECT. Each property has a NAME and a VALUE.
+        </p>
+        <p>On a computer you can interact with some objecs. When you do, you trigger an EVENT. An EVENT is the computer's way of sticking up its hand to say that something just happened. </p>
+        <p>A SCRIPT will state which evnets the programmer wants to respond to and when each of those events occur.</p>
+        <p>METHODS represent things people need to do with objects. They can retrieve or update the values of an object's properties.
+            The code for a method can contain lots of instructions that together represent one tast.
+        </p>
+        <p>Web browsers use HTML markup to create a model of the web page. each ellement creates its own NODE; which is a kind of OBJECT.</p>
+        <p>C- HOW DO I WRITE A SCRIPT FOR A WEB PAGE?</p>
+        <p>HTML &lt>= Content Layer: this is where the content of the page lives. The HTML gives the page structure and adds semantics.
+            CSS {}= Presentation Layer: The CSS enhances the HTML page with rules that state how the HTML content is presented.
+            JAVASCRIPT()= Behavior Layer: This is where we can chnge how the page behaves, adding interactivity. We aim to keep as much of our JS as possible in separate files. 
+        </p>
+        <p>Check out the script that I used in JS to prompt THIS = <script src='read01.js'></script></p>
+        <p>JavaScript runs where it is found in the HTML. Which is why this script was posted here at the bottom and not at the top. </p>
+    
+    </body>
+    
+</html>
