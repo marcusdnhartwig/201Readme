@@ -1,0 +1,21 @@
+header {
+  background-color: blanchedalmond;
+  /* text-align: center; */
+  width: max-content;
+  margin: 50px auto;
+}
+
+div {
+  font-size: 2vw;
+  border: 2px solid black;
+  padding: 10px 0px 40px 80px;
+  display: inline-block;
+}
+
+.divOne {
+  background-color: cornflowerblue;
+}
+
+#divTwo {
+  background-color: darkgrey;
+}
