@@ -1,45 +1,76 @@
-'use strict';
+var greeting = 'hello';
 
-// function delaration
-function greeting(){
-  console.log('hello there!');
+function greetSome() {
+  var firstName = 'josh';
+  greeting = 'hola';
+  return `${greeting} ${firstName}`;
 }
 
-greeting();
 
-// function expression
 
-// let newGreeting = function(){
-//   console.log('this is a new greeting');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 'use strict';
+
+// // function delaration
+// function greeting(){
+//   console.log('hello there!');
 // }
 
-// newGreeting();
+// greeting();
 
-function namedGreeting(firstName, lastName){
-  console.log(`hello ${firstName} ${lastName}!`);
-}
+// // function expression
 
-namedGreeting('Marcus', 'Hartwig');
+// // let newGreeting = function(){
+// //   console.log('this is a new greeting');
+// // }
 
-// function returns
+// // newGreeting();
 
-function multiply(a,b){
-  return a*b;;
-}
-let product = multiply(2,2);
-console.log(product);
+// function namedGreeting(firstName, lastName){
+//   console.log(`hello ${firstName} ${lastName}!`);
+// }
 
-function subtraction(a,b = 0){ //w/default parameter
-  return a-b;
-}
-let answer = subtraction(10, 20);
-console.log(answer);
+// namedGreeting('Marcus', 'Hartwig');
 
-//function w/ multiple returns
+// // function returns
 
-function sum(a,b){
-  return [a+b, 'this will help on friday!'];
-}
+// function multiply(a,b){
+//   return a*b;;
+// }
+// let product = multiply(2,2);
+// console.log(product);
 
-let addition = sum(6,6); //[0]will only give the sum w/out the string
-console.log(addition);
+// function subtraction(a,b = 0){ //w/default parameter
+//   return a-b;
+// }
+// let answer = subtraction(10, 20);
+// console.log(answer);
+
+// //function w/ multiple returns
+
+// function sum(a,b){
+//   return [a+b, 'this will help on friday!'];
+// }
+
+// let addition = sum(6,6); //[0]will only give the sum w/out the string
+// console.log(addition);

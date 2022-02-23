@@ -1,0 +1,33 @@
+/* PLAY TIME #1 */
+
+.gird-container {
+  width: 90%;
+  margin: auto;
+  display: gird;
+  grid-template-columns: 2fr 3fr;
+  /* grid-auto-rows: minmax(200px, auto); */
+  
+  row-gap: 10px;
+  /* gap:30px; shorthand if both column and gap are the same  */
+  column-gap: 20px;
+
+  grid-template-areas:
+    "header header"
+    "sidebar content"
+    "sidebar content";
+}
+
+.grid-item1 {
+  grid-area: header;
+}
+
+.grid-item2 {
+  grid-area: sidebar;
+}
+
+/* PLAY TIME #2 */
+.gird-container div {
+  border: 2px solid black;
+  font-size: 1.5em;
+  padding: 30px;
+}
